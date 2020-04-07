@@ -1,0 +1,110 @@
+.swiper-box {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 16px 0 0 0;
+  height: 540px;
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  height: 960px; /* 300px; */
+  margin: 0 auto;
+}
+.swiper-wrapper {
+  z-index: 1;
+}
+.swiper-slide-ghost {
+  position: absolute;
+  z-index: 0;
+  height: 465px;
+  /* border-radius: 15px; */
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  margin: 0 16px 0 16px;
+  /* Test{{ */
+  border: 1px solid #7affff;
+  background: red;
+  /* Test}} */
+}
+.swiper-slide-ghost > .swiper-slide {
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: none;
+  /* border-radius: 0; */
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  /* opacity: 0.99;
+  transform: scale(0.99); */
+  /* Test{{ */
+  border: 1px solid #ff7aff;
+  background: cyan;
+  /* Test}} */
+}
+.swiper-slide {
+  /* Test{{ */
+  border: 1px solid #007aff;
+  /* Test}} */
+  box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  box-sizing: border-box;
+
+  width: calc(100% - 32px);
+  height: 240px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.append-buttons a {
+  display: inline-block;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.scale-up {
+  animation: scale-up 100 ease-out 0;
+}
+@keyframes scale-up {
+  to {
+    opacity: 0.99;
+    transform: scale(0.99);
+  }
+}
+.scale-down {
+  animation: scale-down 300 ease-out 0;
+}
+@keyframes scale-down {
+  to {
+    opacity: 0.491961;
+    transform: scale(0.491961);
+  }
+}
